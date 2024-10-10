@@ -1,2 +1,2 @@
-# drafting
-A simple application for course "Engineering Desigining &amp; Drafting".
+# TA・SA用機械製図管理システム
+
