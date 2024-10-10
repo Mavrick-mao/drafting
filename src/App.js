@@ -1,12 +1,24 @@
-import React from 'react';
-import Login from './Login';
+import React, { useState } from 'react';
+import Login from './Login'; // Import the login component
 
-function App() {
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // Placeholder login logic
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
-    <div>
-      <Login />
+    <div className="App">
+      {isLoggedIn ? (
+        <div>Welcome to your app!</div>
+      ) : (
+        <Login onLoginSuccess={handleLoginSuccess} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
+
