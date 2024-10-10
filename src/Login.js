@@ -1,63 +1,45 @@
 import React, { useState } from 'react';
+import './Login.css'; // Optional: You can style your login form here
 
-function Login() {
+const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    // ユーザー名とパスワードの検証
-    if (username === 'AdachiLab' && password === 'AdachiLab') {
-      setIsLoggedIn(true);
-      setError('');
-    } else {
-      setError('ユーザー名またはパスワードが間違っています');
-    }
-  };
-
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    setUsername('');
-    setPassword('');
+    // Add your login logic here (e.g., call an API)
+    console.log('Login attempted with', { username, password });
   };
 
   return (
-    <div>
-      {!isLoggedIn ? (
-        <form onSubmit={handleLogin}>
-          <h2>ログイン</h2>
-          {error && <p style={{ color: 'red' }}>{error}</p>}
-          <div>
-            <label>ユーザー名:</label>
-            <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label>パスワード:</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </div>
-          <button type="submit">ログイン</button>
-        </form>
-      ) : (
-        <div>
-          <h2>ようこそ、AdachiLab！</h2>
-          <button onClick={handleLogout}>ログアウト</button>
+    <div className="login-container">
+      <h2>Login</h2>
+      <form onSubmit={handleLogin}>
+        <div className="form-group">
+          <label htmlFor="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
         </div>
-      )}
+        <div className="form-group">
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
     </div>
   );
-}
+};
 
 export default Login;
+
