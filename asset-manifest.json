@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/engineering_drafting/static/css/main.f855e6bc.css",
-    "main.js": "/engineering_drafting/static/js/main.54bb47c6.js",
-    "static/js/453.c158f8be.chunk.js": "/engineering_drafting/static/js/453.c158f8be.chunk.js",
-    "static/media/logo.svg": "/engineering_drafting/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/engineering_drafting/index.html",
-    "main.f855e6bc.css.map": "/engineering_drafting/static/css/main.f855e6bc.css.map",
-    "main.54bb47c6.js.map": "/engineering_drafting/static/js/main.54bb47c6.js.map",
-    "453.c158f8be.chunk.js.map": "/engineering_drafting/static/js/453.c158f8be.chunk.js.map"
+    "main.css": "/drafting/static/css/main.f855e6bc.css",
+    "main.js": "/drafting/static/js/main.9220207d.js",
+    "static/js/453.c158f8be.chunk.js": "/drafting/static/js/453.c158f8be.chunk.js",
+    "static/media/logo.svg": "/drafting/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/drafting/index.html",
+    "main.f855e6bc.css.map": "/drafting/static/css/main.f855e6bc.css.map",
+    "main.9220207d.js.map": "/drafting/static/js/main.9220207d.js.map",
+    "453.c158f8be.chunk.js.map": "/drafting/static/js/453.c158f8be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.54bb47c6.js"
+    "static/js/main.9220207d.js"
   ]
 }
